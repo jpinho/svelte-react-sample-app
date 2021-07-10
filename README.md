@@ -25,7 +25,7 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 </main>
 ```
 
-Demo [here](https://svelte-react.surge.sh), source code for the demo [here](demo).
+Demo [here](https://svelte-react.surge.sh).
 
 
 ## Limitations
