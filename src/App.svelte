@@ -1,12 +1,11 @@
 <script>
   import Button from "@material-ui/core/Button";
   import ReactNode from "./utils/ReactNode.svelte";
-
-  export let name;
 </script>
 
 <main>
-  <h1>React inside Svelte {name} with React Material UI!</h1>
+  <h1>React inside Svelte</h1>
+  <h2>with React Material UI!</h2>
 
   <ReactNode
     element={Button}
@@ -25,11 +24,14 @@
     margin: 0 auto;
   }
 
-  h1 {
+  h1, h2 {
     color: #ff3e00;
     text-transform: uppercase;
     font-size: 4em;
     font-weight: 100;
+  }
+  h2 {
+    font-size: 2em;
   }
 
   @media (min-width: 640px) {

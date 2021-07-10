@@ -8,12 +8,11 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 <script>
   import Button from "@material-ui/core/Button";
   import ReactNode from "./utils/ReactNode.svelte";
-
-  export let name;
 </script>
 
 <main>
-  <h1>React inside Svelte {name} with React Material UI!</h1>
+  <h1>React inside Svelte</h1>
+  <h2>with React Material UI!</h2>
 
   <ReactNode
     element={Button}
