@@ -33,13 +33,11 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 
 Check the live demo [here](https://svelte-react.surge.sh).
 
-## Limitations
+## Usage
 
-This is a fairly basic integration, some things don't currently work:
-
-- No JSX support yet, so all React Node Trees need to be manually created via React.createElement
-- This integration is basic by design, you shouldn't be doing React inside Svelte unless you have a Base Library of React Components and you really need to reuse
-- Mixing React & Svelte is an interim solution, since both are different beast and any adapter that you can come up with, will need constant work to keep up both with Svelte and React distros
+Right now there is no npm package that you can install.
+To use this, simply copy/paste the `ReactAdapter` into your project and you are done.
+Additionally, you may want to copy the rollup and typescript configurations so that you can have React and Svelte living side-by-side.
 
 ## License
 
