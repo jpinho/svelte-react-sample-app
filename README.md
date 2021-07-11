@@ -42,4 +42,4 @@ Additionally, you may want to copy the rollup and typescript configurations so t
 
 ## License
 
-[LIL](LICENSE)
+[MIT](LICENSE)
