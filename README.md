@@ -31,7 +31,8 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 </style>
 ```
 
-Check the live demo [here](https://svelte-react.surge.sh).
+Check the live demo [here](https://svelte-react.surge.sh), and don't forget to see the [BlogPost: Using React Within Svelte Apps](https://jpepinho.medium.com/using-react-within-your-svelte-applications-3b1f2a75aefc).
+
 
 ## Usage
 
