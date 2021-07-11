@@ -1,5 +1,7 @@
 # svelte-react
 
+![svelte-react](docs/svelte.png)
+
 Use React components inside Svelte apps.
 
 This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Harris/react-svelte/blob/master/README.md) with some bonus given we also add MaterialUI to the mix here.
@@ -29,8 +31,7 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 </style>
 ```
 
-Demo [here](https://svelte-react.surge.sh).
-
+Check the live demo [here](https://svelte-react.surge.sh).
 
 ## Limitations
 
