@@ -7,21 +7,26 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 ```svelte
 <script>
   import Button from "@material-ui/core/Button";
-  import ReactNode from "./utils/ReactNode.svelte";
+  import ReactAdapter from "./utils/ReactAdapter.svelte";
 </script>
 
-<main>
-  <h1>React inside Svelte</h1>
-  <h2>with React Material UI!</h2>
+<ReactAdapter
+  el={Button}
+  class="mui-btn"
+  children="Hello"
+  variant="contained"
+  color="primary"
+  onClick={() => alert("hello world!")}
+/>
 
-  <ReactNode
-    element={Button}
-    children="Hello"
-    variant="contained"
-    color="primary"
-    onClick={() => alert("hello world!")}
-  />
-</main>
+<style>
+  /**
+   * Styling a React Component from within a Svelte Component.
+   */
+  :global(.mui-btn) {
+    margin: 20px;
+  }
+</style>
 ```
 
 Demo [here](https://svelte-react.surge.sh).
