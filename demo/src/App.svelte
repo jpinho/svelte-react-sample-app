@@ -1,26 +1,32 @@
 <script>
+  // React-Svelte Adapters
   import ReactAdapter from "./utils/ReactAdapter.svelte";
-  import React from 'react';
-  
+  import ReactSlot from "./utils/ReactSlot.svelte";
+
   // react mui components
   import Button from "@material-ui/core/Button";
-  import Divider from '@material-ui/core/Divider';
-  import Badge from '@material-ui/core/Badge';
-  import MailIcon from '@material-ui/icons/Mail';
-  import MyTable from './components/react/MyTable';
-  import Badges from './components/react/Badges';
+  import Divider from "@material-ui/core/Divider";
+  import Badge from "@material-ui/core/Badge";
+  import MyTable from "./components/react/MyTable";
+  import Badges from "./components/react/Badges";
+
+  let badgeContent = 5
 </script>
 
 <main>
   <h1>React inside Svelte</h1>
   <h2>with React Material UI!</h2>
-  
-  <ReactAdapter 
-    el={Divider} 
-    variant="middle" 
-    class={"mui-divider"}
-  />
-  
+
+  <ReactSlot {badgeContent}>
+    {`
+      <Badge badgeContent={badgeContent} color="primary"></Badge>
+    `}
+  </ReactSlot>
+
+  <button on:click={() => badgeContent++}>inc</button>
+
+  <ReactAdapter el={Divider} variant="middle" class={"mui-divider"} />
+
   <h3>A MUI React Button</h3>
   <ReactAdapter
     el={Button}
@@ -63,7 +69,7 @@
     margin-top: 20px;
   }
   h1,
-  h2, 
+  h2,
   h3 {
     color: #ff3e00;
     text-transform: uppercase;

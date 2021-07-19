@@ -2,10 +2,8 @@
   import React from "react";
   import ReactDOM from "react-dom";
   import { onDestroy, onMount } from "svelte";
-
   const e = React.createElement;
   let container;
-
   /**
    * Svelte compiles on the server/statically, React renders on the client.
    * Therefore, React stuff need to happen within Svelte (window/dom) zones.
@@ -18,7 +16,6 @@
       console.warn(`react-adapter failed to mount.`, { err });
     }
   });
-
   onDestroy(() => {
     try {
       ReactDOM.unmountComponentAtNode(container);
