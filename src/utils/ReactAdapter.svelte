@@ -21,7 +21,7 @@
 
   onDestroy(() => {
     try {
-      ReactDOM.unmountComponentAtNode(container);
+      container && ReactDOM.unmountComponentAtNode(container);
     } catch (err) {
       console.warn(`react-adapter failed to unmount.`, { err });
     }
