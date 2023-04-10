@@ -1,6 +1,10 @@
-# svelte-react
+# svelte-react-kit sample app
 
-![svelte-react](docs/svelte.png)
+![svelte-react-kit sample app](docs/svelte.png)
+
+This is just a sample app for the [svelte-react-kit](https://github.com/jpinho/svelte-react-kit) project.
+
+---
 
 Use React components inside Svelte apps.
 
@@ -32,7 +36,6 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 ```
 
 Check the live demo [here](https://svelte-react.surge.sh), and don't forget to see the [BlogPost: Using React Within Svelte Apps](https://jpepinho.medium.com/using-react-within-your-svelte-applications-3b1f2a75aefc).
-
 
 ## Usage
 
