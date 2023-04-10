@@ -1,12 +1,10 @@
 <script>
-  import ReactAdapter from "./utils/ReactAdapter.svelte";
-  import React from 'react';
-  
+  import { ReactAdapter } from 'svelte-react-kit';
+
   // react mui components
-  import Button from "@material-ui/core/Button";
+  import Button from '@material-ui/core/Button';
   import Divider from '@material-ui/core/Divider';
   import Badge from '@material-ui/core/Badge';
-  import MailIcon from '@material-ui/icons/Mail';
   import MyTable from './components/react/MyTable';
   import Badges from './components/react/Badges';
 </script>
@@ -14,13 +12,9 @@
 <main>
   <h1>React inside Svelte</h1>
   <h2>with React Material UI!</h2>
-  
-  <ReactAdapter 
-    el={Divider} 
-    variant="middle" 
-    class={"mui-divider"}
-  />
-  
+
+  <ReactAdapter el={Divider} variant="middle" class={'mui-divider'} />
+
   <h3>A MUI React Button</h3>
   <ReactAdapter
     el={Button}
@@ -28,7 +22,7 @@
     children="Say Hello"
     variant="contained"
     color="primary"
-    onClick={() => alert("Hello Fella!")}
+    onClick={() => alert('Hello Fella!')}
   />
 
   <h3>An Outstanding Custom MUI React Table</h3>
@@ -63,7 +57,7 @@
     margin-top: 20px;
   }
   h1,
-  h2, 
+  h2,
   h3 {
     color: #ff3e00;
     text-transform: uppercase;
