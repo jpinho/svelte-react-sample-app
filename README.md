@@ -13,7 +13,7 @@ This repo is the mirror of [RichHarris/react-svelte](https://github.com/Rich-Har
 ```svelte
 <script>
   import Button from "@material-ui/core/Button";
-  import ReactAdapter from "./utils/ReactAdapter.svelte";
+  import { ReactAdapter } from "svelte-react-kit";
 </script>
 
 <ReactAdapter
